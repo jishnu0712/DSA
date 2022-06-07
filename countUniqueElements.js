@@ -1,4 +1,9 @@
-const arr = [1, 2, 2, 2, 2, 3, 3, 3, 5, 5, 6, 7, 7, 8, 8, 8, 8];
+//count unique elements in array
+//set i=0,j=1
+//while arr[i]===arr[j], increment j
+//if(arr[i]!==arr[j]), increment j,put the value of arr[i ] in arr[j]
+// return i+1
+
 
 const countUniqueNumber = (array) => {
     if (array.length === 0) {
@@ -13,5 +18,5 @@ const countUniqueNumber = (array) => {
     }
     return (i+1);
 }
-
-console.log(countUniqueNumber([]));
+const arr = [1, 2, 2, 2, 2, 3, 3, 3, 5, 5, 6, 7, 7, 8, 8, 8, 8];
+console.log(countUniqueNumber(arr));
