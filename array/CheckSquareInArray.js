@@ -12,11 +12,11 @@ function checkSquare(arr1, arr2) {
     for (element of arr1) {
         map1[element] = (map1[element] || 0) + 1;
     }
-    console.log(map1);
+    //console.log(map1);
     for (item of arr2) {
         map2[item] = (map2[item] || 0) + 1;
     }
-    console.log(map2);
+    //console.log(map2);
     for (let key in map1) {
         const map2key = key * key;
 
