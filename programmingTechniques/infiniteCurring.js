@@ -9,5 +9,13 @@ function infCurryingAdd(a) {
     }
 }
 
-const res = infCurryingAdd(5)(5)(6)(11)();
+function add(a){
+    return function(b){
+        if(b) {
+            return add(a+b)
+        }
+        return a;
+    }
+}
+const res = add(5)(5)(6)(11)();
 console.log(res);
